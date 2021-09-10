@@ -1,0 +1,21 @@
+{
+"languageserver": {
+  "haskell": {
+    "command": "wraper",
+    "args": ["--lsp"],
+    "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+    "filetypes": ["haskell", "lhaskell"],
+    "initializationOptions":{
+      "codeLens":{
+        "generate":true,
+        "test":true
+      }
+    }
+  }
+}
+/* ,"suggest.disableKind":true */
+,"suggest.disableMenuShortcut":true
+,"suggest.maxCompleteItemCount":15
+,"suggest.detailField":"menu"
+,"codeLens.enable":true
+}
